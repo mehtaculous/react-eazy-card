@@ -1,8 +1,14 @@
 import React from 'react';
 
-const CardBody = () => {
+const defaultStyles = {
+
+};
+
+const CardBody = ({ className = "", style, children }) => {
+  const styles = { ...defaultStyles, ...style };
   return (
-    <div className={} style={}>
+    <div className={`card ${className}`} style={styles}>
+      {children}
     </div>
   );
 };

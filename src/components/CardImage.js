@@ -1,9 +1,14 @@
 import React from 'react';
 
-const CardImage = () => {
+const defaultStyles = {
+
+};
+
+const CardImage = ({ style, imageSrc }) => {
+  const styles = { ...defaultStyles, ...style}
   return (
-    <div style={}>
-      <img className={} src={} style={} />
+    <div style={styles}>
+      <img className="card__image" src={imageSrc} style={} />
     </div>
   );
 };
