@@ -12,8 +12,8 @@ const hover = {
   boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)"
 };
 
-const Card = ({ className = "", style, children }) => {
-  const styles = { ...defaultStyles, ...style };
+const Card = ({ className = "", style, bgColor = "#fff", fontColor = "#000", children }) => {
+  const styles = { ...defaultStyles, ...style, backgroundColor: bgColor, color: fontColor };
   return (
     <div className={`card ${className}`} style={styles}>
       {children}
