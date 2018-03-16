@@ -1,9 +1,5 @@
-import React, {Component} from 'react'
-
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export { default as Card } from "./components/Card";
+export { default as CardHeader } from "./components/CardHeader";
+export { default as CardImage } from "./components/CardImage";
+export { default as CardBody } from "./components/CardBody";
+export { default as CardFooter } from "./components/CardFooter";
