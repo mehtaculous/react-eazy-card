@@ -5,23 +5,25 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from '../../src';
 
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>react-eazy-card Demo</h1>
-      <Card>
-        <CardHeader>
+    return (
+      <div>
+        <h1>react-eazy-card Demo</h1>
+        <Card>
+          <CardHeader>
 
-        </CardHeader>
-        <CardImage>
+          </CardHeader>
+          <CardImage>
 
-        </CardImage>
-        <CardBody>
+          </CardImage>
+          <CardBody>
 
-        </CardBody>
-        <CardFooter>
+          </CardBody>
+          <CardFooter>
 
-        </CardFooter>
-      </Card>
-    </div>
+          </CardFooter>
+        </Card>
+      </div>
+    );
   }
 }
 
