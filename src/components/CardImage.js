@@ -1,7 +1,11 @@
 import React from 'react';
 
 const defaultStyles = {
-
+  width: "200px",
+  margin: "auto",
+  marginTop: "15px",
+  marginBottom: "15px",
+  objectFit: "cover"
 };
 
 const CardImage = ({ style, imageSrc }) => {

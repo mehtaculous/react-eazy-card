@@ -1,7 +1,11 @@
 import React from 'react';
 
 const defaultStyles = {
-
+  height: "30px",
+  paddingTop: "5px",
+  paddingBottom: "20px",
+  textAlign: "center",
+  borderTop: "1px solid #b2b2b2"
 };
 
 const CardFooter = ({ style, children}) => {
