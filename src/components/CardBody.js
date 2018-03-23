@@ -7,10 +7,10 @@ const defaultStyles = {
   borderTop: "1px solid #b2b2b2"
 };
 
-const CardBody = ({ className = "", style, children }) => {
+const CardBody = ({ style, children }) => {
   const styles = { ...defaultStyles, ...style };
   return (
-    <div className={`card ${className}`} style={styles}>
+    <div className='card__body' style={styles}>
       {children}
     </div>
   );

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {render} from 'react-dom';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 import './style.css'
 import { Card, CardHeader, CardImage, CardBody, CardFooter } from '../../src';
 import Image from './soulo.jpg'
@@ -13,14 +13,16 @@ class Demo extends Component {
           <CardHeader>
             <h2>Ab-Soul</h2>
           </CardHeader>
-          <CardImage imageSrc={Image} />
+          <a href="https://en.wikipedia.org/wiki/Ab-Soul" target="_blank">
+            <CardImage imageSrc={Image} />
+          </a>
           <CardBody>
             <p>
               Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
             </p>
           </CardBody>
           <CardFooter>
-            <h3>Black Hippy</h3>
+            <h3>Top Dawg Entertainment</h3>
           </CardFooter>
         </Card>
       </div>
