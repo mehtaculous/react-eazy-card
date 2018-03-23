@@ -15,34 +15,6 @@ A React component card that eliminates the distortion of images and allows for t
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
 
-## Demo
-![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.png)
-```
-class Demo extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Eazy Card Demo</h1>
-        <Card>
-          <CardHeader>
-            <h2>Ab-Soul</h2>
-          </CardHeader>
-          <CardImage imageSrc={Image} />
-          <CardBody>
-            <p>
-              Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
-            </p>
-          </CardBody>
-          <CardFooter>
-            <h3>Top Dawg Entertainment</h3>
-          </CardFooter>
-        </Card>
-      </div>
-    );
-  }
-}
-```
-
 ## Installation
 ```
 npm install --save react-eazy-card
@@ -50,7 +22,7 @@ npm install --save react-eazy-card
 
 ## Usage
 
-```
+```react
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-card';
@@ -87,6 +59,34 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-ca
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardFooter>` component |
 | `style` | Object | User can add additional styles or overwrite the default ones |
+
+## Demo
+![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.png)
+```react
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Eazy Card Demo</h1>
+        <Card>
+          <CardHeader>
+            <h2>Ab-Soul</h2>
+          </CardHeader>
+          <CardImage imageSrc={Image} />
+          <CardBody>
+            <p>
+              Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
+            </p>
+          </CardBody>
+          <CardFooter>
+            <h3>Top Dawg Entertainment</h3>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+}
+```
 
 ## License
 MIT License
