@@ -28,7 +28,7 @@ import { render } from 'react-dom';
 import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-card';
 ```
 
-### <Card>
+### `<Card>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User must nest all components inside `<Card>` component |
@@ -36,25 +36,25 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-ca
 | `fontColor` | String | User can change the default font color |
 | `style` | Object | User can add additional styles or overwrite the default ones |
 
-### <CardHeader>
+### `<CardHeader>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardHeader>` component |
 | `style` | Object | User can add additional styles or overwrite the default ones |
 
-### <CardImage>
+### `<CardImage>`
 | Property | Type | Description
 :---|:---|:---
 | `imageSrc` | String | User can pass the image url to render inside `<CardImage>` component |
 | `style` | Object | User can add additional styles or overwrite the default ones |
 
-### <CardBody>
+### `<CardBody>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardBody>` component |
 | `style` | Object | User can add additional styles or overwrite the default ones |
 
-### <CardFooter>
+### `<CardFooter>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardFooter>` component |
