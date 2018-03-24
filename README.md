@@ -67,7 +67,6 @@ class Demo extends Component {
   render() {
     return (
       <div>
-        <h1>Eazy Card Demo</h1>
         <Card>
           <CardHeader>
             <h2>Ab-Soul</h2>
