@@ -61,7 +61,7 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-ca
 | `style` | Object | User can add additional styles or overwrite the default ones |
 
 ## Demo
-![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.png)
+![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.jpg)
 ```js
 class Demo extends Component {
   render() {
