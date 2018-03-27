@@ -2,7 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 import { Card, CardHeader, CardImage, CardBody, CardFooter } from '../../src';
-import Image from './soulo.jpg';
 
 function Demo() {
   return (
@@ -12,8 +11,8 @@ function Demo() {
         <CardHeader>
           <h2>Ab-Soul</h2>
         </CardHeader>
-        <a href="https://en.wikipedia.org/wiki/Ab-Soul">
-          <CardImage imageSrc={Image} />
+        <a href="https://en.wikipedia.org/wiki/Ab-Soul" target="_blank">
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
         </a>
         <CardBody>
           <p>

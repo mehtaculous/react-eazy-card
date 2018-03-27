@@ -40,28 +40,28 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-ca
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardHeader>` component |
-| `style` | Object | User can add additional styles or overwrite the default ones |
+| `style` | Object | User can add additional styles or override the default ones |
 
 ### `<CardImage>`
 | Property | Type | Description
 :---|:---|:---
 | `imageSrc` | String | User can pass the image url to render inside `<CardImage>` component |
-| `style` | Object | User can add additional styles or overwrite the default ones |
+| `style` | Object | User can add additional styles or override the default ones |
 
 ### `<CardBody>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardBody>` component |
-| `style` | Object | User can add additional styles or overwrite the default ones |
+| `style` | Object | User can add additional styles or override the default ones |
 
 ### `<CardFooter>`
 | Property | Type | Description
 :---|:---|:---
 | `children` | Function | User can render child elements inside `<CardFooter>` component |
-| `style` | Object | User can add additional styles or overwrite the default ones |
+| `style` | Object | User can add additional styles or override the default ones |
 
 ## Demo
-![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.jpg)
+![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.png)
 ```js
 class Demo extends Component {
   render() {
@@ -71,7 +71,7 @@ class Demo extends Component {
           <CardHeader>
             <h2>Ab-Soul</h2>
           </CardHeader>
-          <CardImage imageSrc={Image} />
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
           <CardBody>
             <p>
               Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.

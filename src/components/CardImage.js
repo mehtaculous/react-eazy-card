@@ -8,7 +8,8 @@ const defaultStyles = {
 };
 
 const defaultImage = {
-  height: '200px',
+  maxWidth: '200px',
+  maxheight: '200px',
 };
 
 const circular = {

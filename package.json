@@ -1,6 +1,6 @@
 {
   "name": "react-eazy-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-eazy-card React component",
   "main": "lib/index.js",
   "module": "es/index.js",
