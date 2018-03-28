@@ -6,14 +6,14 @@
 
 A React component card that eliminates the distortion of images and allows for the flexibility of card features.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+[build-badge]: https://img.shields.io/travis/mehtaculous/react-eazy-card/master.png?style=flat-square
+[build]: https://travis-ci.org/mehtaculous/react-eazy-card
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[coveralls-badge]: https://img.shields.io/coveralls/mehtaculous/react-eazy-card/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/mehtaculous/react-eazy-card
 
 ## Installation
 ```
@@ -22,10 +22,32 @@ npm install --save react-eazy-card
 
 ## Usage
 
+![Demo](https://s3-us-west-1.amazonaws.com/react-eazy-card/demo.png)
 ```js
-import React, { Component } from 'react';
-import { render } from 'react-dom';
 import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-card';
+
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <Card>
+          <CardHeader>
+            <h2>Ab-Soul</h2>
+          </CardHeader>
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
+          <CardBody>
+            <p>
+              Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
+            </p>
+          </CardBody>
+          <CardFooter>
+            <h3>Top Dawg Entertainment</h3>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+}
 ```
 
 ### `<Card>`
@@ -60,8 +82,83 @@ import { Card, CardHeader, CardImage, CardBody, CardFooter } from 'react-eazy-ca
 | `children` | Function | User can render child elements inside `<CardFooter>` component |
 | `style` | Object | User can add additional styles or override the default ones |
 
-## Demo
-![Eazy Card Demo](https://github.com/mehtaculous/react-eazy-card/blob/master/demo/src/demo.png)
+## Examples
+
+### Card w/ Additional Styles
+![Additional Styles](https://s3-us-west-1.amazonaws.com/react-eazy-card/card_color.png)
+```js
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <Card bgColor={'#000'} fontColor={'#fff'}>
+          <CardHeader>
+            <h2>Ab-Soul</h2>
+          </CardHeader>
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
+          <CardBody>
+            <p>
+              Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
+            </p>
+          </CardBody>
+          <CardFooter>
+            <h3>Top Dawg Entertainment</h3>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+}
+```
+
+### Card w/o Header Component
+![No Header](https://s3-us-west-1.amazonaws.com/react-eazy-card/no_header.png)
+```js
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <Card>
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
+          <CardBody>
+            <p>
+              Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
+            </p>
+          </CardBody>
+          <CardFooter>
+            <h3>Top Dawg Entertainment</h3>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+}
+```
+
+### Card w/o Body Component
+![No Body](https://s3-us-west-1.amazonaws.com/react-eazy-card/no_body.png)
+```js
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <Card>
+          <CardHeader>
+            <h2>Ab-Soul</h2>
+          </CardHeader>
+          <CardImage imageSrc="https://s3.amazonaws.com/hiphopdx-production/2013/11/Ab_Soul_304x304.jpg" />
+          <CardFooter>
+            <h3>Top Dawg Entertainment</h3>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+}
+```
+
+### Card w/o Footer Component
+![No Footer](https://s3-us-west-1.amazonaws.com/react-eazy-card/no_footer.png)
 ```js
 class Demo extends Component {
   render() {
@@ -77,9 +174,6 @@ class Demo extends Component {
               Herbert Anthony Stevens IV is an American hip hop recording artist from Carson, California.
             </p>
           </CardBody>
-          <CardFooter>
-            <h3>Top Dawg Entertainment</h3>
-          </CardFooter>
         </Card>
       </div>
     );
